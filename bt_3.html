@@ -16,7 +16,7 @@
         let over_time_hours = 10; //Giờ OT
         let bonus_rate = 1.5; //Hệ số
         let final_salary =
-          base_salary + over_time_hours * bonus_rate - tax_rate;
+          base_salary + over_time_hours * bonus_rate - base_salary * tax_rate;
         document.write("Lương thực nhận là: " + final_salary);
       }
     </script>
