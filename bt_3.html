@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bài 3</title>
+  </head>
+  <body>
+    <h3>Tái cấu trúc hệ thống tính lương của công ty X</h3>
+    <button onclick="result()">Bấm để xem</button>
+
+    <script>
+      function result() {
+        const tax_rate = 0.1; //Thuế
+        let base_salary = 5000; //Lương cơ bản
+        let over_time_hours = 10; //Giờ OT
+        let bonus_rate = 1.5; //Hệ số
+        let final_salary =
+          base_salary + over_time_hours * bonus_rate - tax_rate;
+        document.write("Lương thực nhận là: " + final_salary);
+      }
+    </script>
+  </body>
+</html>
